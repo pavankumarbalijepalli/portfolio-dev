@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { ExternalLink, Github, Code, Brain, Database, Bot, Globe, Zap } from "lucide-react";
+import { ExternalLink, Github, Code, Brain, Database, Bot, Globe, Zap, Languages, Scroll, Cpu, BotMessageSquare } from "lucide-react";
 
 interface Project {
   title: string;
@@ -18,65 +18,68 @@ const projects: Project[] = [
   {
     title: "Research on SLMs vs LLMs",
     description: "In-depth analysis comparing Locally Finetuned Phi-2 and Defog SQLCoder-7b across NL2SQL tasks. Evaluates performance, efficiency, and practical applications in real-world scenarios.",
-    tech: ["Python", "PEFT", "Transformers", "TRL", "bitsandbytes"],
+    tech: ["Python", "PEFT", "Transformers", "TRL", "Bitsandbytes"],
     githubUrl: "https://github.com/placeholder/ai-chat-assistant",
     liveUrl: "https://ai-chat-demo.example.com",
-    icon: Bot,
+    icon: Scroll,
     color: "text-blue-400",
     borderColor: "border-blue-500/50",
-    category: "AI/ML"
+    category: "AI Research"
   },
   {
-    title: "Multi-Agent System",
-    description: "Sophisticated multi-agent framework for autonomous task coordination. Implements agent communication protocols, task distribution, and collaborative problem-solving using advanced AI techniques.",
-    tech: ["Python", "AutoGen", "LangGraph", "Redis", "Docker"],
+    title: "Telugu Finetuned LLM",
+    description: "Custom fine-tuned language model for Telugu language tasks. Utilizes advanced techniques for low-resource languages, achieving state-of-the-art results in text generation and understanding.",
+    tech: ["Python", "PEFT", "Transformers", "TRL", "Unsloth"],
     githubUrl: "https://github.com/placeholder/multi-agent-system",
-    icon: Brain,
+    liveUrl: "https://codegen-demo.example.com",
+    icon: Languages,
     color: "text-purple-400",
     borderColor: "border-purple-500/50",
-    category: "AI/ML"
+    category: "AI Research"
   },
   {
-    title: "Real-time Analytics Dashboard",
-    description: "High-performance data visualization platform processing millions of events per second. Features real-time streaming, interactive charts, and predictive analytics for business intelligence.",
-    tech: ["React", "D3.js", "Apache Kafka", "ClickHouse", "Node.js"],
+    title: "Local Pretrained LLM",
+    description: "A 20M parameter language model trained on a small dataset. Designed for efficient deployment in resource-constrained environments, with capabilities for text generation and understanding.",
+    tech: ["Python", "PyTorch", "Transformers", "Numpy", "CUDA"],
     githubUrl: "https://github.com/placeholder/analytics-dashboard",
     liveUrl: "https://analytics-demo.example.com",
-    icon: Database,
+    icon: Cpu,
     color: "text-green-400",
     borderColor: "border-green-500/50",
     category: "Data Science"
   },
   {
-    title: "Neural Network Optimizer",
-    description: "Custom deep learning framework with novel optimization algorithms. Implements gradient-free optimization techniques and automated hyperparameter tuning for enhanced model performance.",
-    tech: ["Python", "PyTorch", "NumPy", "CUDA", "MLflow"],
+    title: "K.U.W.T MultiAgent Orchestration",
+    description: "Multi-agent orchestration framework for Keep-Up-With-Technology usecase. Integrates multiple AI agents to collaboratively make decisions to fetch latest tech information from the internet.",
+    tech: ["Python", "LangGraph", "OpenAI", "LangFuse"],
     githubUrl: "https://github.com/placeholder/neural-optimizer",
-    icon: Zap,
+    liveUrl: "https://codegen-demo.example.com",
+    icon: Bot,
     color: "text-yellow-400",
     borderColor: "border-yellow-500/50",
-    category: "AI/ML"
+    category: "AI Agents"
   },
   {
-    title: "Distributed Computing Platform",
-    description: "Scalable microservices architecture for handling large-scale data processing tasks. Features auto-scaling, load balancing, and fault tolerance with Kubernetes orchestration.",
-    tech: ["Go", "Kubernetes", "gRPC", "PostgreSQL", "Redis"],
+    title: "AI Product Search Engine",
+    description: "Similar to Amazon Rufus, this AI-powered search engine uses advanced natural language processing to understand user queries and provide relevant product recommendations. Can be integrated with any e-commerce platform.",
+    tech: ["Python", "LangGraph", "OpenAI", "Ollama", "ChromaDB"],
     githubUrl: "https://github.com/placeholder/distributed-platform",
-    icon: Globe,
+    liveUrl: "https://codegen-demo.example.com",
+    icon: BotMessageSquare,
     color: "text-cyan-400",
     borderColor: "border-cyan-500/50",
-    category: "Backend"
+    category: "AI Agents"
   },
   {
-    title: "Code Generation Tool",
-    description: "AI-powered code generation and refactoring assistant. Utilizes fine-tuned language models to generate high-quality code snippets, documentation, and automated testing suites.",
-    tech: ["TypeScript", "OpenAI Codex", "AST Parser", "Electron", "Monaco Editor"],
+    title: "Peronsal Document Organizer Agent",
+    description: "An AI agent that organizes personal documents using natural language understanding. It categorizes, tags, and retrieves documents based on user questions, enhancing productivity and document management.",
+    tech: ["Python", "LangGraph", "Ollama", "ChromaDB", "Edge"],
     githubUrl: "https://github.com/placeholder/code-generator",
     liveUrl: "https://codegen-demo.example.com",
-    icon: Code,
+    icon: BotMessageSquare,
     color: "text-orange-400",
     borderColor: "border-orange-500/50",
-    category: "Tools"
+    category: "AI Agents"
   }
 ];
 

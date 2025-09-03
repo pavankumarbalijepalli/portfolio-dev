@@ -14,7 +14,7 @@ export default function Home() {
     fontLink.href = 'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Ubuntu+Mono:wght@400;700&display=swap';
     fontLink.rel = 'stylesheet';
     document.head.appendChild(fontLink);
-
+    
     return () => {
       document.head.removeChild(fontLink);
     };

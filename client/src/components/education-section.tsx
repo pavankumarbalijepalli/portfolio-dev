@@ -7,7 +7,7 @@ const educationData = [
     degree: "Master's of Technology",
     field: "Data Science & Engineering", 
     institution: "Birla Institute of Technological Sciences, Pilani",
-    cgpa: "7.9",
+    cgpa: "7.94",
     year: "2024",
     icon: GraduationCap,
     color: "tech-blue",

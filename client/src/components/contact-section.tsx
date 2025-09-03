@@ -194,6 +194,9 @@ export default function ContactSection() {
           <p className="text-gray-400 font-content">
             © 2024 Pavan Kumar Balijepalli. Built with passion for AI and innovation.
           </p>
+          <p className="text-gray-600 font-content">
+            Humility, Empathy & Gratitude - Learn, Listen & Live.
+          </p>
         </div>
       </motion.footer>
     </section>

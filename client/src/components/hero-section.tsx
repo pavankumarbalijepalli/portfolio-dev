@@ -82,6 +82,7 @@ export default function HeroSection() {
           <motion.button 
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
+            onClick={() => window.open("https://github.com/pavankumarbalijepalli", "_blank")}
             className="tech-gradient px-8 py-3 rounded-full font-semibold font-mono hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 transform animate-glow"
           >
             View My Work
@@ -89,6 +90,7 @@ export default function HeroSection() {
           <motion.button 
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
+            onClick={() => window.open("https://github.com/pavankumarbalijepalli/achievements/blob/main/assets/PavanKumar_Balijepalli_v8.pdf", "_blank")}
             className="border border-blue-500 tech-blue px-8 py-3 rounded-full font-semibold font-mono hover:bg-blue-500 hover:text-black transition-all duration-300"
           >
             Download Resume
